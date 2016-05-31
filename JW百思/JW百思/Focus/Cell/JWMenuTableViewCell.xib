@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuTableViewCell" id="KGk-i7-Jjw" customClass="JWMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHp-cW-wrd" customClass="JWMenuTableCellContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl1-fa-wHr">
+                                <rect key="frame" x="25" y="11" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xl1-fa-wHr" firstAttribute="leading" secondItem="NHp-cW-wrd" secondAttribute="leading" constant="25" id="3q0-Db-JPM"/>
+                            <constraint firstAttribute="bottom" secondItem="xl1-fa-wHr" secondAttribute="bottom" constant="11" id="FP5-VS-t8S"/>
+                            <constraint firstItem="xl1-fa-wHr" firstAttribute="top" secondItem="NHp-cW-wrd" secondAttribute="top" constant="11" id="bjp-VD-O1K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="NHp-cW-wrd" secondAttribute="trailing" constant="-8" id="0WQ-Nu-MyO"/>
+                    <constraint firstItem="NHp-cW-wrd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="52j-Sa-QGk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NHp-cW-wrd" secondAttribute="bottom" constant="-8" id="J4s-4m-yhj"/>
+                    <constraint firstItem="NHp-cW-wrd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Qub-qr-8f9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="showView" destination="NHp-cW-wrd" id="W2h-kh-abw"/>
+                <outlet property="tittleLabel" destination="xl1-fa-wHr" id="QZa-oo-iaq"/>
+            </connections>
+            <point key="canvasLocation" x="121" y="2"/>
+        </tableViewCell>
+    </objects>
+</document>
